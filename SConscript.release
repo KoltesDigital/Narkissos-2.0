@@ -1,0 +1,6 @@
+Import('base')
+env = base.Clone()
+
+prog = env.Program('#bin/narkissos', Glob('src/*.cpp'))
+
+Return('prog')
